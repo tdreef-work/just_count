@@ -13,7 +13,7 @@ def cmd_group():
 
 @click.argument(
     "number",
-    type=int,
+    type=float,
     )
 
 def sqr(number):
@@ -24,7 +24,7 @@ def sqr(number):
 
 @click.argument(
     "number",
-    type=int,
+    type=float,
     )
 
 def sqrt(number):
@@ -33,4 +33,3 @@ def sqrt(number):
 
 if __name__ == '__main__':
     cmd_group()
-    
