@@ -11,7 +11,7 @@ python = "^3.9"
 click = "^8.1.7"
 
 [tool.poetry.scripts]
-square = "just_count.count_count:main"
+square = "just_count.count_count:cmd_group"
 
 
 [build-system]
