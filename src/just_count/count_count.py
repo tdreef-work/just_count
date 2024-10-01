@@ -4,17 +4,33 @@ import just_count.squareroot as squareroot
 import click
 
 
-@click.command()
+@click.group()
+def cmd_group():
+    pass
+
+
+@cmd_group.command()
 
 @click.argument(
     "number",
     type=int,
     )
 
-def main(number):
+def sqr(number):
     print(f"The square of {number} is {square.square(number)}")
+
+
+@cmd_group.command()
+
+@click.argument(
+    "number",
+    type=int,
+    )
+
+def sqrt(number):
     print(f"The squareroot of {number} is {squareroot.squareroot(number)}")
 
 
 if __name__ == '__main__':
-    main()
+    cmd_group()
+    
