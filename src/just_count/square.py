@@ -4,3 +4,4 @@ def square(x):
 
 if __name__ == "__main__":
     print(f"The square of 4 is {square(4)}")
+    
